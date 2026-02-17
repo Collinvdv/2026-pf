@@ -4,7 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
         // Objective: Ask the user for their name and age, then calculate their age in 10 years.
 
         // O: Enter your name: 
@@ -12,6 +11,11 @@ class Program
         // O: Enter your age: 
         // I: 25
         // O: Hello Alice, in 10 years you will be 35 years old.
+        System.Console.WriteLine("Enter your name:");
+        string name = Console.ReadLine();
+        System.Console.WriteLine("Enter your age:");
+        int age = Convert.ToInt16(Console.ReadLine());
+
 
 
 

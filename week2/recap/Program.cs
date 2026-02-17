@@ -6,11 +6,13 @@ class Program
     static void Main(string[] args)
     {
         // BACK AT 9:40
-        
+
         // Declaration + init of variables
-        string firstname = "Collin";
-        string lastname = "Van der Vorst";
-        string fullname = firstname + " " + lastname;
+        Console.WriteLine("Give me your firstname");
+        string firstname = Console.ReadLine();
+        Console.WriteLine("Give me your lastname");
+        string lastname = Console.ReadLine();
+        string fullname = $"{firstname} and the lastname {lastname}";
         int age = 34; // integer is used for whole numbers 
         double height = 1.94; // double float
         bool isMarried = true; // boolean only 2 values to be stored true or false
