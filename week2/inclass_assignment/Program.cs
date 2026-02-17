@@ -5,5 +5,54 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+        // Objective: Ask the user for their name and age, then calculate their age in 10 years.
+
+        // O: Enter your name: 
+        // I: Alice
+        // O: Enter your age: 
+        // I: 25
+        // O: Hello Alice, in 10 years you will be 35 years old.
+
+
+
+
+
+
+
+
+
+
+
+        // Objective: Get two numbers from the user and display their sum.
+        // O: Enter the first number: 
+        // I: 8
+        // O: Enter the second number: 
+        // I: 12
+        // O: The sum is: 20
+        // O: The division is: 0.6666666
+
+
+
+
+
+        // Objective: Convert a temperature from Celsius to Fahrenheit.
+        // Temperature in degrees Celsius (°C) * 9/5) + 32
+        // O: Enter temperature in Celsius: 
+        // I: 25
+        // O: 25C is equal to 77F.
+
+
+
+
+
+
+
+
+        // Objective calculate BMI (BMI = kg/m2) 
+        // O: Enter your weight (kg): 
+        // I: 70
+        // O: Enter your height (m): 
+        // I: 1.75
+        // O: Your BMI is 22.86
     }
 }
