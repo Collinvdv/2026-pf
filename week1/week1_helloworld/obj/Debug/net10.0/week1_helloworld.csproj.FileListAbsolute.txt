@@ -1,0 +1,14 @@
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/bin/Debug/net10.0/week1_helloworld
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/bin/Debug/net10.0/week1_helloworld.deps.json
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/bin/Debug/net10.0/week1_helloworld.runtimeconfig.json
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/bin/Debug/net10.0/week1_helloworld.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/bin/Debug/net10.0/week1_helloworld.pdb
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.AssemblyInfoInputs.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.AssemblyInfo.cs
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.csproj.CoreCompileInputs.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/refint/week1_helloworld.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.pdb
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/week1_helloworld.genruntimeconfig.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week1/week1_helloworld/obj/Debug/net10.0/ref/week1_helloworld.dll
