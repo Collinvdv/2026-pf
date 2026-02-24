@@ -19,5 +19,48 @@ class Program
         System.Console.WriteLine(7/2.0);
 
         System.Console.WriteLine(profit);
+
+
+
+
+        /*
+            Comparison operatos
+            >, <, ==
+        */
+       int number1 = 10;
+       int number2 = 10;
+
+       Console.WriteLine(number1 == number2); // == to check if it is the same
+       Console.WriteLine(number1 != number2); // True
+       Console.WriteLine(number1 > number2); // Greater then
+       Console.WriteLine(number1 >= number2); // Greater or equal then
+       Console.WriteLine(number1 < number2); // smaller then
+       Console.WriteLine(number1 <= number2); // Smaller or equal then
+
+        int number4 = 300;
+        string number4_str = Convert.ToString(number4); // "300""
+        char firstNumber = number4_str[0];
+        Console.WriteLine(firstNumber);
+
+        Console.WriteLine("Collin");
+        Console.Write("C");
+        Console.Write("O");
+        Console.Write("L");
+
+        int charIndex  = Console.Read();
+        Console.WriteLine(charIndex);
+
+
+
+
+       /*
+            String operations
+       */
+
+
+
+        /*
+            Char
+        */
     }
 }
