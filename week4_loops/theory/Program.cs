@@ -154,14 +154,14 @@ class Program
  
 
         // Console.WriteLine("Total is now more than 100");
-        int number = Convert.ToInt16(Console.ReadLine()); 
+        int number = Convert.ToInt16(5382); 
         string numberStr = number.ToString();
 
         if (number >= 0)
-        {            
+        {
             for (int i = (numberStr.Length-1); i >= 0; i--)
             {
-            Console.Write(numberStr[i]);
+                Console.Write(numberStr[i]);
             }
         } else
         {
