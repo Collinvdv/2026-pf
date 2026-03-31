@@ -78,7 +78,7 @@ class Program
             if (amount > 0) totalIncome += amount;
             yearProfit += amount;
         }
-        Console.WriteLine($"Income total: {totalIncome}");
+        Console.WriteLine($"Income total: {totalIncomegs}");
         Console.WriteLine($"Costs total: {totalCosts}");
         Console.WriteLine($"Profit: {yearProfit}");
 
@@ -108,5 +108,28 @@ class Program
         // O: Total result is 7300
         //
 
+
+
+
+//         3. Title: Calculate the Sum
+
+// Goal: Practice looping through an array and adding values.
+
+// Instructions:
+// Create an array with 5 integers. Calculate the total sum of all numbers and show the result.
+
+// Input/Output:
+// O: The sum is ...
+
+// Test Scenarios:
+// 1.
+// Array: 1, 2, 3, 4, 5
+// O: The sum is 15
+
+// Array: 10, 10, 10, 10, 10
+// O: The sum is 50
+
+// Array: 7, 1, 9, 2, 6
+// O: The sum is 25
     }
 }
