@@ -121,7 +121,7 @@ class Program
 // Input/Output:
 // O: The sum is ...
 
-// Test Scenarios:
+// Test Scenarios
 // 1.
 // Array: 1, 2, 3, 4, 5
 // O: The sum is 15

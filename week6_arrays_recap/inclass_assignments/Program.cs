@@ -4,25 +4,218 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // 1. Sum of Array
+        // Goal: Calculate the sum of all elements in an array
+        // Input/Output
+        // I: array
+        // O: sum
+        // Test Scenarios
+        // I:
+        // 1 2 3 4 5
+        // O:
+        // 15
+
+        // // Step 1: ask for a string of numbers, .Split(' ') them by space and convert them to the correct time
+        // string[] numbersStr = Console.ReadLine().Split(' ');
+        // double[] numbers = Array.ConvertAll(numbersStr, double.Parse);
+
+        // // Step 2: loop over the array and summarize them
+        // double sum = 0;
+
+        // foreach(double number in numbers)
+        // {
+        //     sum += number;
+        // }
+
+        // Console.WriteLine(sum);
+
+        // I:
+        // 10 20 30
+        // O:
+        // 60
+
+
+
+
+
+
+        // 2. Find Maximum
+        // Goal: Find the largest number in an array
+
+        // Input/Output
+        // I: array
+        // O: max
+
+        // Test Scenarios
+        // I:
+        // 3 7 2 9 4
+        // O:
+        // 9
+
+        // I:
+        // -5 -2 -9
+        // O:
+        // -2
+
+        // string[] numbersStr = "3 7 2 9 4".Split(' ');
+        // double[] numbers = Array.ConvertAll(numbersStr, double.Parse);
+
+        // Approach 1: using .Max();
+        // double max = numbers.Max();
+        // Console.WriteLine(max);
+
+        // Approach 2: Array.Sort()
+        // Array.Sort(numbers);
+        // Console.WriteLine(numbers[numbers.Length - 1]);
+
+        // Approach 3: using for and if statements 
+        // double max = numbers[0];
+
+        // foreach(double number in numbers)
+        // {
+        //     if (number > max)
+        //     {
+        //         max = number;
+        //     }
+        // }
+
+        // Console.WriteLine(max);
+        // int amountOfStudents = 3;
+        // int amountOfGrades = 5;
+        // int[,] gradebook = {
+        //     {10, 16, 4, 6, 7},
+        //     {1, 20, 20, 20, 20},
+        //     {17, 7, 8, 20, 0}
+        // };
+
+        // Print2DArray(gradebook);
+
+        // 7. Row Sum (2D Array)
+
+        // Goal: Print sum of each row
+
+        // Input/Output
+        // I: matrix
+        // O: row sums
+
+        // Test Scenarios
+        // I:
+        // 1 2 3
+        // 4 5 6
+
+        // O:
+        // 6 15
+        // int [,] data =
+        // {
+        //     { 1, 2, 3},
+        //     { 4, 5, 6}
+
+        // };
+
+        // for (int rowIndex = 0; rowIndex < data.GetLength(0); rowIndex++)
+        // {
+        //     double rowTotal = 0;
+        //     // row 0
+        //     for (int columnIndex = 0; columnIndex < data.GetLength(1); columnIndex++)
+        //     {
+        //         rowTotal += data[rowIndex, columnIndex];
+        //     }
+
+        //     Console.WriteLine(rowTotal);
+        // }
+
+        // 5. Cinema Seats (2D)
+
+        // Goal: Count how many seats are occupied
+
+        // Context: Cinema seating (1 = occupied, 0 = free)
+
+        // Input/Output
+        // I: matrix
+        // O: occupied seats
+
+        // Test Scenarios
+        // I:
+        // 1 0 1
+        // 0 1 1
+        // string [,] cinema =
+        // {
+        //     {"x", "O", "x"},
+        //     {"O", "x", "x"}
+        // };
+
+        // int totalOccieped = 0;
+        // int totalEmpty = 0;
+
+        // foreach (string seat in cinema)
+        // {
+        //     if (seat == "x")
+        //     {
+        //         totalOccieped++;
+        //     } else
+        //     {
+        //         totalEmpty++;
+        //     }
+        // }
+
+        // Console.WriteLine($"{totalOccieped} seats are occieped {totalEmpty} are empty");
+        // O:
+        // 
+
+
+        // Accountancy 
+
+        // Q1: 1000 2000 3000
+        // Q2: 8000
+        // Q3: 500 600 700
+        // Q4: -10000
+
+        // Step 1, create a stagged array 
+        int[][] data = new int [4][];
+
+        data[0] = new int[] {1000, 2000, 3000};
+
+        data[1] = new int [1];
+        data[1][0] = 8000;
+
+        data[2] = new int[] {500, 600, 700};
+        data[3] = new int[] {-10000};
+
+        // Step 2, give me the total result per quarter
+        int finalTotal = 0;
+        for (int quarterIndex = 0; quarterIndex < data.Length; quarterIndex++)
+        {
+            int quarterTotal = 0;
+
+            for (int i = 0; i < data[quarterIndex].Length; i++)
+            {
+                quarterTotal += data[quarterIndex][i];
+                finalTotal += data[quarterIndex][i];
+            }
+
+            Console.WriteLine($"quarterTotal: {quarterTotal}");
+        }
+
+        Console.WriteLine($"finalTotal: {finalTotal}");
+
+        // Step 3, what profit do I have?
+
+    }
+
+    static void Print2DArray(int[,] _array)
+    {
+        for (int i = 0; i < _array.GetLength(0); i++)
+        {
+            for (int j = 0; j < _array.GetLength(1); j++)
+            {
+                Console.Write(_array[i, j] + " ");
+            }
+            Console.WriteLine(); // next row
+        }
     }
 }
 
 
-// 1. Sum of Array
-// Goal: Calculate the sum of all elements in an array
-// Input/Output
-// I: array
-// O: sum
-// Test Scenarios
-// I:
-// 1 2 3 4 5
-// O:
-// 15
-// I:
-// 10 20 30
-// O:
-// 60
 
 
 
@@ -32,24 +225,8 @@ class Program
 
 
 
-// 2. Find Maximum
 
-// Goal: Find the largest number in an array
 
-// Input/Output
-// I: array
-// O: max
-
-// Test Scenarios
-// I:
-// 3 7 2 9 4
-// O:
-// 9
-
-// I:
-// -5 -2 -9
-// O:
-// -2
 
 
 
@@ -105,29 +282,7 @@ class Program
 
 
 
-// 7. Row Sum (2D Array)
 
-// Goal: Print sum of each row
-
-// Input/Output
-// I: matrix
-// O: row sums
-
-// Test Scenarios
-// I:
-// 1 2 3
-// 4 5 6
-
-// O:
-// 6 15
-
-// I:
-// 2 2
-// 3 3
-// 4 4
-
-// O:
-// 4 6 8
 
 
 
