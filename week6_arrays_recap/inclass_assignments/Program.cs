@@ -198,6 +198,12 @@ class Program
 
         Console.WriteLine($"finalTotal: {finalTotal}");
 
+        var data = [
+            [1000, 2000, 3000], 
+            [800],
+            [1000, 4000]
+        ];
+
         // Step 3, what profit do I have?
 
     }
