@@ -82,42 +82,61 @@ class Program
         // kaplekar number 
         // 45 is a Kaprekar number because 45^2 = 2025, and 20 + 25 = 45.
 
-        // step 1: is reading a number
-        int number = Convert.ToInt16("297");
+        // // step 1: is reading a number
+        // int number = Convert.ToInt16("297");
 
-        // step 2: calculating powerTo 
-        double powerTo = Math.Pow(number, 2); //2025
+        // // step 2: calculating powerTo 
+        // double powerTo = Math.Pow(number, 2); //2025
 
-        // step 3: split them up (will use a string for this)
-        string powerToStr = Convert.ToString(powerTo); //"2025"
-        int middle = powerToStr.Length / 2;
-        string part1 = "";
-        string part2 = "";
+        // // step 3: split them up (will use a string for this)
+        // string powerToStr = Convert.ToString(powerTo); //"2025"
+        // int middle = powerToStr.Length / 2;
+        // string part1 = "";
+        // string part2 = "";
 
-        for(int i = 0; i < powerToStr.Length; i++)
+        // for(int i = 0; i < powerToStr.Length; i++)
+        // {
+        //     if (i < middle)
+        //     {
+        //         part1 += powerToStr[i];
+        //     } else
+        //     {
+        //         part2 += powerToStr[i];
+        //     }
+        // }
+
+
+        // Console.WriteLine(part1);
+        // Console.WriteLine(part2);
+
+        // // step 4: add them up and compare them 
+        // int check = Convert.ToInt16(part1) + Convert.ToInt16(part2);
+
+        // if (check == number)
+        // {
+        //     Console.WriteLine("kapelar");
+        // } else
+        // {
+        //     Console.WriteLine("not a kapelar");
+        // }
+
+        // Step 1: get the numbers 
+        // 120 95 140 180 210 300 250
+        string input = Console.ReadLine();
+        string[] weekdays = {"Mon", "Tu", "We", "Thu", "Fri", "Sat", "Sun"};
+
+        // Step 2: convert it to an array of numbers
+        string[] numbersAsStr = input.Split(' ');
+        int[] numbers = Array.ConvertAll(numbersAsStr, int.Parse);
+
+        Console.WriteLine(numbers.Max());
+        // Step 3: show the weekdays
+        for(int i = 0; i < numbers.Length; i++)
         {
-            if (i < middle)
+            if(numbers[i] == numbers.Max())
             {
-                part1 += powerToStr[i];
-            } else
-            {
-                part2 += powerToStr[i];
+                Console.WriteLine(weekdays[i]);
             }
-        }
-
-
-        Console.WriteLine(part1);
-        Console.WriteLine(part2);
-
-        // step 4: add them up and compare them 
-        int check = Convert.ToInt16(part1) + Convert.ToInt16(part2);
-
-        if (check == number)
-        {
-            Console.WriteLine("kapelar");
-        } else
-        {
-            Console.WriteLine("not a kapelar");
         }
     }
 }

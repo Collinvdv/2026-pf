@@ -1,0 +1,15 @@
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/bin/Debug/net10.0/theory
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/bin/Debug/net10.0/theory.deps.json
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/bin/Debug/net10.0/theory.runtimeconfig.json
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/bin/Debug/net10.0/theory.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/bin/Debug/net10.0/theory.pdb
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.GeneratedMSBuildEditorConfig.editorconfig
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.AssemblyInfoInputs.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.AssemblyInfo.cs
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.csproj.CoreCompileInputs.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.sourcelink.json
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/refint/theory.dll
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.pdb
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/theory.genruntimeconfig.cache
+/Users/collinvandervorst/Desktop/programming_fundamentals/week8_files/theory/obj/Debug/net10.0/ref/theory.dll
