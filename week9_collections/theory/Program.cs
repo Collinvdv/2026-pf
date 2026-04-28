@@ -29,50 +29,85 @@ class Program
         // }
 
 
-        // My battleplan
-        // Step 1: create a list of integers numbers 
-        List<int> numbers = new List<int>();
+        // // My battleplan
+        // // Step 1: create a list of integers numbers 
+        // List<int> numbers = new List<int>();
 
-        // Step 2: use a while statement when they type stop, exit the while statement. When it is a number .Add() it to the list
-        while (true)
-        {
-            // ask some input
-            string input = Console.ReadLine();
+        // // Step 2: use a while statement when they type stop, exit the while statement. When it is a number .Add() it to the list
+        // while (true)
+        // {
+        //     // ask some input
+        //     string input = Console.ReadLine();
 
-            // if the input stop, we want to exit the while statement
-            if (input.ToLower() == "stop") break;
+        //     // if the input stop, we want to exit the while statement
+        //     if (input.ToLower() == "stop") break;
 
-            // We didn't execute break, so we will add it to the numbers 
-            int number; 
-            bool isNumber = int.TryParse(input, out number);
+        //     // We didn't execute break, so we will add it to the numbers 
+        //     int number; 
+        //     bool isNumber = int.TryParse(input, out number);
 
-            if (isNumber) {
-                numbers.Add(number);
-            } else
-            {
-                Console.WriteLine("Skip not a number");
-            }
-        }
+        //     if (isNumber) {
+        //         numbers.Add(number);
+        //     } else
+        //     {
+        //         Console.WriteLine("Skip not a number");
+        //     }
+        // }
         
-        // Step 3: loop over the list and .Remove(when it is lower then 0), also count them (?)
-        List<int> negNumbers = new List<int>();
-        List<int> posNumbers = new List<int>();
-        for(int i = 0; i < numbers.Count; i++)
+        // // Step 3: loop over the list and .Remove(when it is lower then 0), also count them (?)
+        // List<int> negNumbers = new List<int>();
+        // List<int> posNumbers = new List<int>();
+        // for(int i = 0; i < numbers.Count; i++)
+        // {
+        //     if (numbers[i] < 0) {
+        //         negNumbers.Add(numbers[i]);
+        //     } else
+        //     {
+        //         posNumbers.Add(numbers[i]);
+        //     }
+        // }
+
+        // // Step 4: display the end result
+        // // Output example:
+        // // Removed: 2
+        // // Remaining: 12 30 8
+        // Console.WriteLine($"Removed: {negNumbers.Count}");
+        // Console.WriteLine($"Remainig: {String.Join(' ', posNumbers)}");
+
+        string input = "Watch “Jeopardy!”, the fun TV quiz game of Alex Trebek.";
+        input = input.ToLower();
+        
+        string alphabet = "abcdefghijklmnopqrstuvwxyz";
+        string lipogram = "";
+
+        foreach(char alphabetLetter in alphabet)
         {
-            if (numbers[i] < 0) {
-                negNumbers.Add(numbers[i]);
-            } else
+            // Option 1: easy if you know contains
+            // if(input.Contains(c) == false)
+            // {
+            //     lipogram += c;
+            // }
+
+            // Option 2, now I need to loop over every single character of the phrase to check if it is existing
+            bool letterIsInWord = false;
+
+            // iterate over all the letters in the phrase, check if it is the same as the current alphabetLtter
+            foreach (char letterInPhrase in input)
             {
-                posNumbers.Add(numbers[i]);
+                if (letterInPhrase == alphabetLetter)
+                {
+                    letterIsInWord = true;
+                }
+            }
+
+            if (letterIsInWord == false)
+            {
+                lipogram += alphabetLetter;
             }
         }
 
-        // Step 4: display the end result
-        // Output example:
-        // Removed: 2
-        // Remaining: 12 30 8
-        Console.WriteLine($"Removed: {negNumbers.Count}");
-        Console.WriteLine($"Remainig: {String.Join(' ', posNumbers)}");
+        Console.WriteLine(lipogram);
+
     }
 }
 
